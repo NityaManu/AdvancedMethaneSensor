@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #001f3f;
+    color: white;
+}
+h2 {
+    color: #00ffcc;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+table {
+    width: 40%;
+    border-collapse: collapse;
+    background: #003366;
+    color: white;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #00ffcc;
+    text-align: center;
+}
+.chart-container {
+    width: 40%;
+    max-width: 500px;
+}
+canvas {
+    width: 100% !important;
+}
+
+/* Sidebar Styling */
+.history-sidebar {
+    width: 250px;
+    height: 80vh; /* Reduce height */
+    background: #003366;
+    padding: 10px;
+    overflow-y: auto;
+    position: fixed;
+    left: -280px;
+    top: 10vh; /* Below the top */
+    transition: left 0.3s;
+    border-right: 2px solid #00ffcc;
+    border-radius: 0 10px 10px 0;
+}
+.history-sidebar.show {
+    left: 0;
+}
+/* Change the color of the clickable time entries */
+.clickable-time {
+    cursor: pointer;
+    color: #007BFF; /* Blue color */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Change the color of the detailed timestamps */
+.history-details {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #28a745; /* Green color */
+}
+
+/* Hide details initially */
+.hidden {
+    display: none;
+}
+
+/* Change background color of the container (optional) */
+#chatContainer {
+    background-color: white; /* Light gray */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Fixed Toggle Button */
+.toggle-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: #00ffcc;
+    color: black;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}

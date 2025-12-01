@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methane Sensor Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="methstyles.css">
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleHistory()">History</button>
+    <div class="history-sidebar" id="historySidebar">
+        <h3>Sensor History</h3>
+        <div id="chatContainer"></div>
+    </div>
+
+    <h2>Methane Sensor Dashboard</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>PPM</th>
+                </tr>
+            </thead>
+            <tbody id="sensorTableBody"></tbody>
+        </table>
+        <div class="chart-container">
+            <canvas id="sensorChart"></canvas>
+        </div>
+    </div>
+    <script src="backend_meth.js"></script>
+</body>
+</html>

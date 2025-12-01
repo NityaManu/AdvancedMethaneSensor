@@ -1,4 +1,4 @@
-# AdvancedMethaneSensor
+# Advanced High-Sensitivity Methane Gas Sensor 
 This project implements a high sensitivity methane gas sensor using graphene-coated interdigitated electrode (IDE) on a custom-designed PCB, interfaced with an ESP32 for real-time data acquisition and web visualization.
 
 ## Overview
